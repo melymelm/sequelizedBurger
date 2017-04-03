@@ -17,7 +17,7 @@ app.get("/", function(req,res) {
 });
 
 //New Burger Created
-app.post("/", function(req, res) {
+app.post("/:id", function(req, res) {
 
     db.Burger.create({
         burger_name: req.body.name,
